@@ -1,12 +1,13 @@
 # SiteWebIIA
 
 récupérer SiteWeb.zip et l'extraire
+
 npm install
 
 npm install bcrypt, pinia, sequelize,vue, axios
 
 CREATE DATABASE `SiteWeb`;
-
+USE 'SiteWeb';
 
 
 CREATE TABLE `chiffre_daffaire` (
@@ -44,12 +45,12 @@ CREATE TABLE `user` (
 INSERT INTO user (id, username, password, prenom, nom, mail) VALUES (1, user	,$2b$10$cNiZJdksKV4rMogXxwSU3.D4H8cYwuXZQtRxPIW0UYRPxhe0OkyAG, nom,	prenom, 0nomsi0@gmail.com)
 
 
-INSERT INTO region (Initiale) VALUES ('IDF');
-INSERT INTO region (Initiale) VALUES ('SUD EST');
-INSERT INTO region (Initiale) VALUES ('SUD OUEST');
-INSERT INTO region (Initiale) VALUES ('OUTRE-MER');
-INSERT INTO region (Initiale) VALUES ('NORD EST');
-INSERT INTO region (Initiale) VALUES ('OUEST');
+INSERT INTO region (idRegion, Initiale) VALUES (1, 'IDF');
+INSERT INTO region (idRegion, Initiale) VALUES (2, 'SUD EST');
+INSERT INTO region (idRegion, Initiale) VALUES (3, 'SUD OUEST');
+INSERT INTO region (idRegion, Initiale) VALUES (4, 'OUTRE-MER');
+INSERT INTO region (idRegion, Initiale) VALUES (5, 'NORD EST');
+INSERT INTO region (idRegion, Initiale) VALUES (6, 'OUEST');
 
 INSERT INTO vendeur (Numero) VALUES ('3600');
 INSERT INTO vendeur (Numero) VALUES ('3500');
