@@ -9,6 +9,10 @@ npm install bcrypt, pinia, sequelize,vue, axios
 CREATE DATABASE `SiteWeb`;
 USE 'SiteWeb';
 
+ CREATE TABLE `vendeur` (
+  `Numero` int NOT NULL,
+  PRIMARY KEY (`Numero`)
+  )
 
 CREATE TABLE `chiffre_daffaire` (
   `idCA` int NOT NULL,
@@ -37,10 +41,7 @@ CREATE TABLE `user` (
   PRIMARY KEY (`id`)
   )
   
- CREATE TABLE `vendeur` (
-  `Numero` int NOT NULL,
-  PRIMARY KEY (`Numero`)
-  )
+
   
 INSERT INTO user (id, username, password, prenom, nom, mail) VALUES (1, user	,$2b$10$cNiZJdksKV4rMogXxwSU3.D4H8cYwuXZQtRxPIW0UYRPxhe0OkyAG, nom,	prenom, 0nomsi0@gmail.com)
 
