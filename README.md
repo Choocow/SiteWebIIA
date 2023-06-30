@@ -1,5 +1,6 @@
 # SiteWebIIA
 
+récupérer SiteWeb.zip et l'extraire
 npm install
 
 npm install bcrypt, pinia, sequelize,vue, axios
